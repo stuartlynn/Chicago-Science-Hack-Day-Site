@@ -1,0 +1,10 @@
+<li class='article'>
+    <div class='article-content'>
+      <h2><%=@title%></h2>
+      <p class='subheading'>Posted by <%=@author%> <%=@posted_at%></p>
+      <div class='media'><img width=420 src='<%=@media%>' /> </div> 
+      <p class='blurb'>
+        <%=@blurb%>
+      </p>
+    </div>
+</li>

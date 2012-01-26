@@ -1,0 +1,23 @@
+{
+  "sponsors": [
+    { 
+      "name" : "vizzuality",
+      "link" : "http://vizzuality.com/",
+      "logo" : "vizzuality.png",
+      "level" : "EINSTEIN"
+    },
+
+    { 
+      "name"  : "Adler Planetarium",
+      "link"  : "http://www.adlerplanetarium.org/",
+      "logo"  : "adler.png",
+      "level" : "EINSTEIN"
+    },
+   { 
+      "name"  : "Zooniverse",
+      "link"  : "http://www.zooniverse.org/",
+      "logo"  : "zooniverse.png",
+      "level" : "EINSTEIN"
+    }
+  ]
+}

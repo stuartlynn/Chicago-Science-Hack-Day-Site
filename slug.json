@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    "es5-shimify", 
+    "json2ify", 
+    "jqueryify", 
+    "spine",
+    "datejs",
+    "spine/lib/local",
+    "spine/lib/ajax",
+    "spine/lib/route",
+    "spine/lib/tmpl",
+    "spine/lib/manager",
+    "spine/lib/manager"
+
+  ],
+  "libs": ["./app/lib/date.js"]
+}

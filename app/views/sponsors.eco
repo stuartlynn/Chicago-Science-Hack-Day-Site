@@ -1,0 +1,7 @@
+<% for sponsor in @: %>
+<%console.log "inner object is #{sponsor.logo}"%>
+      <div class='sponsor sponsor_<%=sponsor.name%>'>
+        <a href ='<%=sponsor.link%>'  target="_blank" >
+         <img src='sponsors/<%=sponsor.logo%>' /> </a></img>
+      </div>
+<%end%>

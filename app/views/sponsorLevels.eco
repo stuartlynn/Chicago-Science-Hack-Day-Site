@@ -1,0 +1,8 @@
+
+<% for level, amount of @ when typeof(amount)!='function':%>
+ <div id='<%=level%>' class='sponsor-section'>
+  <p>
+    <span style='font-weight:bold'><%=level%> LEVEL - $<%=amount%></span>  This is a little paragraph blurb about the post that is featured right above here. You can write anything you want for this lovely paragraph. This is a little paragraph blurb about the post that is featured right above here.
+  </p>
+</div>
+<%end%>

@@ -1,0 +1,267 @@
+@import './mixin'
+
+fonts = Helvetica, arial, sans-serif
+chiblue  = #4B8FCA
+chigrey  = #bfc3c9
+centerWidth= 820px 
+
+body
+  width: 100%
+  height: 100%
+  background-color: #f8f8f8 
+  padding: 0px
+  margin: 0px
+  font-family: fonts
+  character-spacing:1pt
+  font-weight: light 
+
+h1, h2 
+  font-weight: bold
+
+a
+  color: black
+  text-decoration: none
+  &:hover 
+    color: chiblue
+
+#header
+  width: 100%
+  .headerTop
+    background-color: chiblue
+    height: 5px
+    width: 100%
+
+  .headerBottom
+    width: 100%
+    height: 2px
+    background-color: black 
+
+#poster 
+  height: 739px 
+  text-align: center
+  margin-top: 75px
+  width: centerWidth
+  margin-left:auto
+  margin-right:auto
+  padding: 0px
+  p
+    color: #777777
+    line-height: 20pt
+  #sections 
+    height: 250px
+    width: 100%
+    margin-top: 80px
+    .section
+      width: 33.3333%
+      float: left
+      p
+        color: chiblue
+        font-size: 38pt
+        text-transform: lowercase
+        text-shadow:  0px -1px 0px #3e97d7, 0px 1px 0px white
+        margin:0px
+        padding:0px
+      h2 
+        font-size: 12px
+        color: black
+        text-transform: uppercase 
+        margin-bottom: 15px
+        padding: 0px
+
+#navbar
+  background-color: #f8f8f8
+  height: 122px
+  position: relative
+  z-index:100
+  width:100%
+  top:0px
+  #outer
+    width:100%
+    background-color: #f8f8f8
+
+    border-top: 1px chigrey solid 
+    border-bottom: 1px chigrey solid 
+    margin-top:37px
+    #navcontent
+      width: centerWidth
+      margin-right: auto
+      margin-left: auto
+      height:85px  
+      #shdchi
+        float:left
+        img 
+          width : 150px
+          margin-top: -30px
+        
+      #navitems
+        font-weight: bold
+        float:right
+        line-height: 50px
+        font-size: 20px
+        li
+          text-transform: lowercase
+          display: inline
+          .sep 
+            margin-left:7px
+            margin-right:7px
+  .navFade
+    opacity:0.5
+    background-image: url('images/cshd_fade.png')
+    background-repeat: repeat-x
+    width:100%
+    height: 30px
+    z-index : 20
+
+#lower 
+  width: centerWidth
+  position:relative
+  margin-top: 50px
+  margin-left: auto
+  margin-right: auto
+  height: 1000px
+  #left
+    width: 260px
+    position: absolute
+    left:0px
+    top: 0px
+    margin: 0px
+    padding: 0px
+    #twitter 
+      height: 360px
+      width: 100%
+    #photos 
+      width: 100%
+      height: 210px
+      margin-top : 100px
+      list-style: none
+      li
+        width: 77px
+        height: 77px
+        display:inline-block
+        background-color: chigrey
+        margin-right:9px
+        margin-bottom: 9px
+        
+  #right
+    position: absolute
+    top: 0px
+    right: 0px
+    width: 500px
+    float: right
+    ul#articles
+      list-style: none
+      padding: 0px
+      margin: 0px
+      li.article 
+        position: relative
+        top: 0px
+        left: 0px
+        height: 450px
+        width: 500px
+        div.timeStamp
+          color: white 
+          background-color: chiblue
+          width: 60px
+          height: 60px
+          border-bottom: 1px solid chigrey
+          -moz-border-radius: 60px
+          border-radius: 60px
+          text-align: center
+          line-height: 60px
+          position: absolute
+          font-size: 18px
+          top: 0px
+          left: 0px
+        div.article-content
+          width: 420px
+          position: absolute
+          right: 0px
+          top: 11px
+          border-bottom: 1px solid chigrey
+          h2
+            font-size: 22pt
+            color: chiblue
+            margin-top: 0px
+            margin-bottom: 0px
+          p.subheading
+            font-size: 13px
+            margin-top:2px
+          p.blurb
+            color: #777
+            font-size: 15px
+    #more
+      position: absolute 
+      bottom:10px
+      right:10px
+      cursor: pointer
+      
+#sponsors 
+  width: centerWidth
+  margin-left: auto
+  margin-right: auto
+  .sponsor-section
+    margin: 0px 
+    padding: 0px
+    width: centerWidth
+    .sponsor
+      display: inline-block 
+      width: 260px
+      height: 130px
+      margin-right: 8px
+      margin-bottom: 8px
+      padding:0px
+      background-color: #ebeaea
+      color: black
+      -moz-box-shadow: inset 0 0 5px #888;
+      -webkit-box-shadow: inset 0 0 5px#888;
+      box-shadow: inner 0 0 5px #888;
+      text-align: center 
+      line-height: 130px
+      a
+        padding:0px
+        display:block
+        margin:0px
+        img
+          margin:0px
+          padding:0px
+          opacity : 0.3
+          vertical-align: middle
+
+        img:hover
+          opacity : 1 
+    p
+      width: 100%
+      font-size: 15px
+      color: #777
+      margin-bottom:60px
+      margin-top: 30px
+      span 
+        font-weight: bold
+        color: black
+
+#footer 
+  height:200px
+  width: 100%
+  background-color: #3a91c6
+  border-top: 3px black solid 
+  color: white
+  text-align: center
+  ul
+    li  
+      text-align: left
+      display:inline-block
+      width : 200px
+      height: 20px
+      margin:0px
+      padding:0px
+      margin-right:40px
+      ul 
+        margin:0px
+        padding:0px
+        
+
+.stack > *:not(.active) 
+  display: none
+
+
+  

@@ -1,0 +1,14 @@
+<div id='main-media'>
+  <img src='<%=@media%>'></img>
+</div>
+<h2 id='post-title'><%=@title%></h2>
+<div id='main-post'>
+  <div id='post-left'>
+    <div id='post-meta'>
+      <h3> 
+    </div>
+  </div>
+  <div id='post-right'>
+    <article> <%=@text%> </article>
+  </div>
+</div>
