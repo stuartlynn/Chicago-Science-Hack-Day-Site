@@ -11,15 +11,15 @@
   <div id='sections'>
     <div class='section'>
       <h2>Register you interest</h2>
-      <p>Register</p>
+      <p><a id='registerButton' href="#">Register</a></p>
     </div>
     <div class='section'>
       <h2>Join the conversation</h2>
-      <p>#Chiscihd</p>
+      <p><a href='https://twitter.com/#!/search/realtime/chiscihd' target="_blank">#Chiscihd</a></p>
     </div>
     <div class='section'>
       <h2>Upload your photos</h2>
-      <p>flicker.com</p>
+      <p><a href='http://www.flickr.com/groups/sciencehackday/' target="_blank">flicker.com</a></p>
     </div>
   </div>
 </div>

@@ -4,11 +4,13 @@ NavBar   = require('controllers/NavBar')
 
 class Main extends Spine.Controller
   elements:
-    '#articles' : 'articles'
-    '#sponsors' : 'sponsors'
-    "#navbar"   : 'navbar'
-    "#twitter"  : "twitter"
-    "#photos"    : "flikr"
+    '#articles'       : 'articles'
+    '#sponsors'       : 'sponsors'
+    "#navbar"         : 'navbar'
+    "#twitter"        : "twitter"
+    "#photos"         : "flikr"
+    "#registerButton" : 'registerButton'
+
   constructor: ->
     super
 
@@ -35,6 +37,12 @@ class Main extends Spine.Controller
           @navFixed=false 
           $('#navbar').css("position","relative") 
           $('#lower').css("margin-top","0px")
+
+    $(@registerButton).colorbox
+      href : 'https://docs.google.com/spreadsheet/embeddedform?formkey=dFhZUFVLdUtsc2xZN1ZPT3BNdG9EeGc6MQ' 
+      iframe:true
+      innerWidth: 620
+      innerHeight: 600
       
       #remove twitter
     $(".twtr-ft").find("img").remove()
