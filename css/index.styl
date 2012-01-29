@@ -176,13 +176,14 @@ a
           font-size: 18px
           top: 0px
           left: 0px
-        div.article-content
+        div.articleContent
           width: 420px
           position: absolute
           right: 0px
           top: 11px
           border-bottom: 1px solid chigrey
           h2
+            cursor: pointer
             font-size: 22pt
             color: chiblue
             margin-top: 0px
@@ -193,6 +194,8 @@ a
           p.blurb
             color: #777
             font-size: 15px
+          img
+            cursor : pointer
     #more
       position: absolute 
       bottom:10px
@@ -267,5 +270,32 @@ a
 .stack > *:not(.active) 
   display: none
 
+#postContent 
+  width : centerWidth
+  margin-right : auto
+  margin-left  : auto
 
+  #mainMedia
+    width : 100%
+    img 
+      width : 100%
+  h2
+    color : chiblue
+    padding-top : 20px
+    padding-bottom : 20px
+    border-top : 1px solid chigrey
+    border-bottom : 1px solid chigrey
+  #mainPost
+    width : 100%
+  #postLeft
+    width : 200px
+    height : 100%
+    display: inline-block
+    float : left
+  $postMeta 
+    text-align: center
+  #postRight
+    width: 550px
+    display: inline-block
   
+

@@ -7,10 +7,13 @@ PostFull  = require('controllers/postFull')
 Post      = require('models/Post')
 Sponsor   = require('models/Sponsor')
 
+
+
 class App extends Spine.Stack
   controllers:
     main : Main
     post : PostFull
+    
 
   routes:
     '/': 'main'
@@ -22,10 +25,9 @@ class App extends Spine.Stack
     super
     Spine.Route.setup()
 
+    console.log "ROUTES ARE", Spine.Route.routes
     Post.fetch()
     Sponsor.fetch()
-
-
 
 module.exports = App
     

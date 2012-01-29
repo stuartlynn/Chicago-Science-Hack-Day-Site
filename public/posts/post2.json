@@ -1,8 +1,10 @@
 {
     "post": {
         "title": "Seccond sci hack post",
-        "text": " this hack is even more  awesome  than the first.. so very very very awesome",
-        "media": "/images/exampleMedia.png",
+        "text": "<p>I am a stranger. I come in peace. Take me to your leader and there will be a massive reward for you in eternity.</p><p>I saw for the first time the earth's shape. I could easily see the shores of continents, islands, great rivers, folds of the terrain, large bodies of water. The horizon is dark blue, smoothly turning to black. . . the feelings which filled me I can express with one word—joy.</p><p>We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.</p><p>It's just mind-blowingly awesome. I apologize, and I wish I was more articulate, but it's hard to be articulate when your mind's blown—but in a very good way.</p>",
+
+        "mainMedia": "/images/exampleMedia.png",
+        "media": ["/images/exampleMedia.png"],
         "blurb": " second science hack day post",
         "author": "arfon",
         "posted_at": "2011-12-20 21:41:35 -0600",

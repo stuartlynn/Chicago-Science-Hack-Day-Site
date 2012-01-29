@@ -1,14 +1,19 @@
-<div id='main-media'>
-  <img src='<%=@media%>'></img>
+<div id='mainMedia'>
+  <% console.log @%>
+  <img src="<%=@mainMedia%>"></img>
 </div>
-<h2 id='post-title'><%=@title%></h2>
-<div id='main-post'>
-  <div id='post-left'>
-    <div id='post-meta'>
-      <h3> 
+<h2 id='postTitle'><%=@title%></h2>
+<div id='mainPost'>
+  <div id='postLeft'>
+    <div id='postMeta'>
+      <h3> <%=@author%></h3>  
+      <p> <%=@posted_at.toString("HH:mm d/M/yyyy")%> </p>
+      <%for media in @media:%>
+        <img src='<%=media%>' width=180 ></img>
+      <%end%>
     </div>
   </div>
-  <div id='post-right'>
-    <article> <%=@text%> </article>
+  <div id='postRight'>
+    <article> <%-@text%> </article>
   </div>
 </div>

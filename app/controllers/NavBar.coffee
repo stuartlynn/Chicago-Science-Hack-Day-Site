@@ -14,6 +14,6 @@ class NavBar extends Spine.Controller
   scroll_to : (event)=>
     event.preventDefault()
     ele = $(event.target).attr("href")
-    $('html, body').animate({scrollTop: ($(ele).offset().top - 130)}, 600);
+    $('html, body').animate({scrollTop: ($(ele).offset().top - 170)}, 600);
 
 module.exports = NavBar

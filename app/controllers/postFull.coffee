@@ -12,18 +12,19 @@ class PostFull extends Spine.Controller
     @append (new NavBar()).el.attr("id",'navbar')
     @append "<div id ='postContent'></div>"
     @append require("views/footer")()
-    Post.bind 'create', =>
-      @showPost()
+    Post.bind 'create', (post)=>
+      @showPost() if post.title == @currentPostName
     
   showPost:=>
-
-    @post = Post.first()
-    console.log("post is ",Post.all())
-    @postContent.html require("views/postFull")(@post)
+    @post = Post.findByAttribute('title', @currentPostName)
+    if @post
+      @postContent.html require("views/postFull")(@post)
+    else 
+      @postContent.html ("<h1 style='text-align:center; height:330px' class='error'>Could not find the post you requested</h1>")
 
   activate:(args)=>
     super
-    @currentPostId = args.id
+    @currentPostName = args.id.split("_").join(" ") #this is dumb but I am on a plane and cant remember how replace works
     @showPost()
 
 module.exports = PostFull
