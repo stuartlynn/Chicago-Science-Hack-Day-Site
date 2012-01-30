@@ -6,12 +6,12 @@
 <div id='mainPost'>
   <div id='postLeft'>
     <div id='postMeta'>
-      <h3> <%=@author%></h3>  
-      <p> <%=@posted_at.toString("HH:mm d/M/yyyy")%> </p>
-      <%for media in @media:%>
-        <img src='<%=media%>' width=180 ></img>
-      <%end%>
+      <h3><%=@author%></h3>  
+      <p><%=@posted_at.toString("HH:mm d/M/yyyy")%> </p>
     </div>
+    <%for media in @media:%>
+      <img src='<%=media%>' width=200 ></img>
+    <%end%>
   </div>
   <div id='postRight'>
     <article> <%-@text%> </article>

@@ -20,7 +20,6 @@ class Main extends Spine.Controller
     new Sponsors({el: @sponsors})
     new NavBar({el: @navbar})
     
-    
     @append require("views/footer")()
 
     @setUpFlickrFeed()

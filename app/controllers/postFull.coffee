@@ -6,7 +6,9 @@ NavBar  = require('controllers/NavBar')
 class PostFull extends Spine.Controller
   elements:
     '#postContent' : 'postContent'
- 
+  events:
+    'click #shdchi' : 'back'
+
   constructor: ->
     super 
     @append (new NavBar()).el.attr("id",'navbar')
@@ -24,7 +26,11 @@ class PostFull extends Spine.Controller
 
   activate:(args)=>
     super
+    $(document).scrollTop(0)
     @currentPostName = args.id.split("_").join(" ") #this is dumb but I am on a plane and cant remember how replace works
     @showPost()
+  
+  back: =>
+    Spine.navigate('/') if @.active?
 
 module.exports = PostFull
