@@ -1,6 +1,6 @@
 <div id='outer'>
   <div id='navcontent'>
-    <p id='shdchi'> <img src = 'images/Logo.png' ></img></p> 
+    <p id='shdchi'> <img src = 'images/ChiLogo.png' ></img></p> 
     <ul id='navitems'>
       <li><a href="#header" class='nav_item'>About</a><span class='sep'>/</span></li>
       <li><a href="#articles" class='nav_item'>Blog</a><span class='sep'>/</span></li>
