@@ -2,12 +2,10 @@
     "post": {
         "title": "First sci hack post",
         "text": " <p>Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every 'superstar,' every 'supreme leader,' every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam.</p> <p>The surface is fine and powdery. I can kick it up loosely with my toe. It does adhere in fine layers, like powdered charcoal, to the sole and sides of my boots. I only go in a small fraction of an inch, maybe an eighth of an inch, but I can see the footprints of my boots and the treads in the fine, sandy particles. There seems to be no difficult in moving around, as we suspected. From this day forward, Flight Control will be known by two words: 'Tough' and 'Competent.' </p><p>Tough means we are forever accountable for what we do or what we fail to do. We will never again compromise our responsibilities. Every time we walk into Mission Control we will know what we stand for. Competent means we will never take anything for granted. We will never be found short in our knowledge and in our skills. Mission Control will be perfect. When you leave this meeting today you will go to your office and the first thing you will do there is to write 'Tough and Competent' on your blackboards. It will never be erased. Each day when you enter the room these words will remind you of the price paid by Grissom, White, and Chaffee. These words are the2 price of admission to the ranks of Mission Control. It's just mind-blowingly awesome. I apologize, and I wish I was more articulate, but it's hard to be articulate when your mind's blown—but in a very good way.",
-
-
         "mainMedia": "/images/exampleMedia.png",
-        "media": ["/images/exampleMedia.png"],
+        "media": ["/images/exampleMedia.png", "/images/hackdaylogo.png"],
         "blurb": "Houston, that may have seemed like a very long final phase. The autotargeting was taking us right into a ... crater, with a large number of big boulders and rocks ... and it required ... flying manually over the rock field to find a reasonably good area. A good rule for rocket experimenters to follow is this: always assume that it will explode.",
-        "author": "stuart",
+        "author": "Stuart",
         "posted_at": "2011-12-20 21:31:35 -0600",
         "category": "information"
     }

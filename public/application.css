@@ -1,0 +1,353 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  padding: 0px;
+  margin: 0px;
+  font-family: Helvetica, arial, sans-serif;
+  character-spacing: 1pt;
+  font-weight: light;
+}
+h1,
+h2 {
+  font-weight: bold;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #4b8fca;
+}
+#header {
+  width: 100%;
+}
+#header .headerTop {
+  background-color: #4b8fca;
+  height: 5px;
+  width: 100%;
+}
+#header .headerBottom {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+#poster {
+  height: 739px;
+  text-align: center;
+  margin-top: 75px;
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+#poster p {
+  color: #777;
+  line-height: 20pt;
+}
+#poster #sections {
+  height: 250px;
+  width: 100%;
+  margin-top: 80px;
+}
+#poster #sections .section {
+  width: 33.3333%;
+  float: left;
+}
+#poster #sections .section p {
+  color: #4b8fca;
+  font-size: 38pt;
+  text-transform: lowercase;
+  text-shadow: 0px -1px 0px #3e97d7, 0px 1px 0px #fff;
+  margin: 0px;
+  padding: 0px;
+}
+#poster #sections .section p a {
+  color: #4b8fca;
+}
+#poster #sections .section p a:hover {
+  color: #4b8fca;
+}
+#poster #sections .section h2 {
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 0px;
+}
+#navbar {
+  background-color: #f8f8f8;
+  height: 122px;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  top: 0px;
+}
+#navbar #outer {
+  width: 100%;
+  background-color: #f8f8f8;
+  border-top: 1px #bfc3c9 solid;
+  border-bottom: 1px #bfc3c9 solid;
+  margin-top: 37px;
+}
+#navbar #outer #navcontent {
+  width: 820px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 85px;
+}
+#navbar #outer #navcontent #shdchi {
+  float: left;
+}
+#navbar #outer #navcontent #shdchi img {
+  width: 150px;
+  margin-top: -30px;
+}
+#navbar #outer #navcontent #navitems {
+  font-weight: bold;
+  float: right;
+  line-height: 50px;
+  font-size: 20px;
+}
+#navbar #outer #navcontent #navitems li {
+  text-transform: lowercase;
+  display: inline;
+}
+#navbar #outer #navcontent #navitems li .sep {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+#navbar .navFade {
+  opacity: 0.5;
+  background-image: url("images/cshd_fade.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 30px;
+  z-index: 20;
+}
+#lower {
+  width: 820px;
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1000px;
+}
+#lower #left {
+  width: 260px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+#lower #left #twitter {
+  height: 360px;
+  width: 100%;
+}
+#lower #left #photos {
+  width: 100%;
+  height: 210px;
+  margin-top: 100px;
+  list-style: none;
+}
+#lower #left #photos li {
+  width: 77px;
+  height: 77px;
+  display: inline-block;
+  margin-right: 9px;
+  margin-bottom: 9px;
+}
+#lower #right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 500px;
+  float: right;
+}
+#lower #right ul#articles {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+#lower #right ul#articles li.article {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 450px;
+  width: 500px;
+}
+#lower #right ul#articles li.article div.timeStamp {
+  color: #fff;
+  background-color: #4b8fca;
+  width: 60px;
+  height: 60px;
+  border-bottom: 1px solid #bfc3c9;
+  -moz-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+  font-size: 18px;
+  top: 0px;
+  left: 0px;
+}
+#lower #right ul#articles li.article div.articleContent {
+  width: 420px;
+  position: absolute;
+  right: 0px;
+  top: 11px;
+  border-bottom: 1px solid #bfc3c9;
+}
+#lower #right ul#articles li.article div.articleContent h2 {
+  cursor: pointer;
+  font-size: 22pt;
+  color: #4b8fca;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#lower #right ul#articles li.article div.articleContent p.subheading {
+  font-size: 13px;
+  margin-top: 2px;
+}
+#lower #right ul#articles li.article div.articleContent p.blurb {
+  color: #777;
+  font-size: 15px;
+}
+#lower #right ul#articles li.article div.articleContent img {
+  cursor: pointer;
+}
+#lower #right #more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+#sponsors {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sponsors .sponsor-section {
+  margin: 0px;
+  padding: 0px;
+  width: 820px;
+}
+#sponsors .sponsor-section .sponsor {
+  display: inline-block;
+  width: 260px;
+  height: 130px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 0px;
+  background-color: #ebeaea;
+  color: #000;
+  -moz-box-shadow: inset 0 0 5px #888;
+  -webkit-box-shadow: inset 0 0 5px #888;
+  -moz-box-shadow: inner 0 0 5px #888;
+  -webkit-box-shadow: inner 0 0 5px #888;
+  box-shadow: inner 0 0 5px #888;
+  text-align: center;
+  line-height: 130px;
+}
+#sponsors .sponsor-section .sponsor a {
+  padding: 0px;
+  display: block;
+  margin: 0px;
+}
+#sponsors .sponsor-section .sponsor a img {
+  margin: 0px;
+  padding: 0px;
+  opacity: 0.3;
+  vertical-align: middle;
+}
+#sponsors .sponsor-section .sponsor a img:hover {
+  opacity: 1;
+}
+#sponsors .sponsor-section p {
+  width: 100%;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+#sponsors .sponsor-section p span {
+  font-weight: bold;
+  color: #000;
+}
+#footer {
+  height: 200px;
+  width: 100%;
+  background-color: #3a91c6;
+  border-top: 3px #000 solid;
+  color: #fff;
+  text-align: center;
+}
+#footer ul li {
+  text-align: left;
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 40px;
+}
+#footer ul li ul {
+  margin: 0px;
+  padding: 0px;
+}
+.stack > *:not(.active) {
+  display: none;
+}
+#postContent {
+  width: 820px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 200px;
+}
+#postContent #mainMedia {
+  width: 100%;
+}
+#postContent #mainMedia img {
+  width: 100%;
+}
+#postContent h2 {
+  color: #4b8fca;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #bfc3c9;
+  border-bottom: 1px solid #bfc3c9;
+}
+#postContent #mainPost {
+  width: 100%;
+}
+#postContent #postLeft {
+  width: 200px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+#postContent #postMeta {
+  text-align: right;
+  broder: 1px solid #808080;
+  margin-bottom: 50px;
+}
+#postContent #postMeta h3 {
+  font-weight: 100;
+  margin: 0px;
+  font-size: 30px;
+}
+#postContent #postMeta p {
+  font-size: 11px;
+  margin-top: 0px;
+}
+#postContent #postRight {
+  width: 600px;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 15px;
+  padding-left: 20px;
+  text-align: top;
+}
