@@ -3,7 +3,7 @@
   <div class='headerBottom'></div>
 </div>
 <div id='poster'>
-  <img  src='images/logo.png'  width=240 id="logo"></img>
+  <img  src='images/Logo.png'  width=240 id="logo"></img>
   <h1>Hack the museums. 12 May 2012.</h1>
   <p> 
   Science Hack Day is an event that aims to get creative, technical and scientific people together for a 24 hour sprint to  collaboratively build something cool. It can be something useful, insightful, silly or just fun. Science hack day Chicago will be hosted at the Adler and will focus on producing hacks for Museums and so have a heavy focus on explaining concepts and exposing the public to new ideas and thoughts.
