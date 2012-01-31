@@ -7,14 +7,11 @@ PostFull  = require('controllers/postFull')
 Post      = require('models/Post')
 Sponsor   = require('models/Sponsor')
 
-
-
 class App extends Spine.Stack
   controllers:
     main : Main
     post : PostFull
     
-
   routes:
     '/': 'main'
     '/posts/:id': 'post'
@@ -24,8 +21,13 @@ class App extends Spine.Stack
   constructor:->
     super
     Spine.Route.setup()
+   
+    $(window).bind "hashchange", =>
+      if window.location.hash == ""
+        console.log("going home")
+        @navigate('/') 
+        
 
-    console.log "ROUTES ARE", Spine.Route.routes
     Post.fetch()
     Sponsor.fetch()
 
