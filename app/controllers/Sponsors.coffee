@@ -11,9 +11,14 @@ class Sponsors extends Spine.Controller
     'NEWTON'   :  2000
     'KEPLER'   :  500
 
+  blurbs:
+    'EINSTEIN' :  "Sponsors at this level get a 5 minute presentation at the start of the event, can bring promotional materials to the event and will have thier logo displayed here."
+    'NEWTON'   :  "Sponsors at this level can bring promotional materials to the event and will have thier logo displayed here."
+    'KEPLER'   :  "Sponsors at this level will have thier logo displayed here."
+
   constructor: ->
     super 
-    @append require("views/sponsorLevels")(@levels)
+    @append require("views/sponsorLevels")({levels:@levels, blurbs: @blurbs})
     Sponsor.bind 'refresh', @render
 
   render:=>

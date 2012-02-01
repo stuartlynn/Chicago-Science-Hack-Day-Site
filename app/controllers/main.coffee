@@ -57,7 +57,7 @@ class Main extends Spine.Controller
             
   setUpFlickrFeed:=>
     @flikr.jflickrfeed
-      limit: 10
+      limit: 9
       flickrbase: 'http://api.flickr.com/services/feeds/'
       feedapi: "groups_pool.gne"
       qstrings: 
