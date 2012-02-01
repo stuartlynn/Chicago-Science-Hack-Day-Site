@@ -46,7 +46,7 @@ class Main extends Spine.Controller
   
   setUpTiwtterFeed: ->
     @twitter.jTweetsAnywhere
-      searchParams: 'q=sciencehackday'
+      searchParams: 'q=sciencehackday OR shdchi'
       count: 4
       showTweetFeed: 
         autorefresh: 
