@@ -1,25 +1,26 @@
 <div id="footer">
   <ul>
     <li>
-      <h3> Get More Info</h3>
-      <p> Sign up to receive news and updates about science hack day chicago</p>
-      <input type='textfield'></input>  
+      <h3>Get updates</h3>
+     
+      <p><img class='register' href='#' src='images/register.png' id='more'></img></p>
+
     </li>
     <li> 
       <h3>Orginisers</h3>
         <ul>
-          <li> Stuart Lynn </li>
-          <li> Arfon Smith </li>
-          <li> David Miller </li>
-          <li> Ariel Waldman </li>
+          <li> <a href="https://twitter.com/stuart_lynn">Stuart Lynn </a> </li>
+          <li> <a href="https://twitter.com/arfon"> Arfon Smith</a> </li>
+          <li> <a href="https://twitter.com/davidmill"> David Miller </a></li>
+          <li> <a href="https://twitter.com/arielwaldman">Ariel Waldman</a></li>
         </ul>
     </li>
     <li> 
       <h3>Venue</h3>
       <p>Adler Planeterium <br/>
       1300 South Lake Shore Drive
-      Chicago, IL 60605</p>
-      <p> 312.555.1234</p>
+      Chicago, IL 60605 <br />
+      312.555.1234</p>
      </li>
   </ul>
 </div>

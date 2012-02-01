@@ -1,5 +1,4 @@
 {
-    "posts": ["post1.json",
-              "post2.json"
+    "posts": ["post1.json"
              ]
 }

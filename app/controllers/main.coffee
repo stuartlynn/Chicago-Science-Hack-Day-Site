@@ -9,7 +9,7 @@ class Main extends Spine.Controller
     "#navbar"         : 'navbar'
     "#twitter"        : "twitter"
     "#photos"         : "flikr"
-    "#registerButton" : 'registerButton'
+    ".register" : 'registerButton'
 
   constructor: ->
     super
@@ -20,61 +20,44 @@ class Main extends Spine.Controller
     new Sponsors({el: @sponsors})
     new NavBar({el: @navbar})
     
+    @append require("views/hacks")()
+
     @append require("views/footer")()
 
     @setUpFlickrFeed()
-    
+    @setUpTiwtterFeed()
+
     $(document).scroll =>
-      if $(document).scrollTop() > 823
+      if $(document).scrollTop() > 743
         unless @navFixed
           @navFixed = true 
           $('#navbar').css("position","fixed") 
           $('#navbar').css("top","0px") 
-          $('#lower').css("margin-top","135px")
+          $('#lower').css("margin-top","142px")
       else 
         if @navFixed 
           @navFixed=false 
           $('#navbar').css("position","relative") 
           $('#lower').css("margin-top","0px")
 
-    $(@registerButton).colorbox
-      href : 'https://docs.google.com/spreadsheet/embeddedform?formkey=dFhZUFVLdUtsc2xZN1ZPT3BNdG9EeGc6MQ' 
-      iframe:true
-      innerWidth: 620
-      innerHeight: 600
-      
+ 
       #remove twitter
     $(".twtr-ft").find("img").remove()
   
-  @setUpTiwtterFeed: ->
-    twtr = new TWTR.Widget
-      version: 2
-      type: 'search'
-      search: 'chiscihd OR sciencehackday'
-      interval: 30000
-      title: 'Science Hack Day Chicago'
-      subject: ''
-      width: 'auto'
-      height: 300
-      theme:
-        shell:
-          background: '#ffffff'
-          color: '#ffffff'
-        tweets:
-          background: '#ffffff'
-          color: '#444444'
-          links: '#444444'
-      features:
-        scrollbar: false
-        loop: false
-        live: true
-        behavior: 'all'
-    twtr.render().start();
-
+  setUpTiwtterFeed: ->
+    @twitter.jTweetsAnywhere
+      searchParams: 'q=sciencehackday'
+      count: 4
+      showTweetFeed: 
+        autorefresh: 
+          mode: 'trigger-insert'
+          interval: 60
+        showTimestamp: 
+          refreshInterval: 15
+            
   setUpFlickrFeed:=>
-
     @flikr.jflickrfeed
-      limit: 9
+      limit: 10
       flickrbase: 'http://api.flickr.com/services/feeds/'
       feedapi: "groups_pool.gne"
       qstrings: 

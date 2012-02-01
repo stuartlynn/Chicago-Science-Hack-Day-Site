@@ -19,10 +19,10 @@ h1, h2
   font-weight: bold
 
 a
-  color: black
+  color: chiblue
   text-decoration: none
   &:hover 
-    color: chiblue
+    color: black
 
 #header
   width: 100%
@@ -33,27 +33,30 @@ a
 
   .headerBottom
     width: 100%
-    height: 2px
+    height: 10px
     background-color: black 
 
 #poster 
-  height: 739px 
+  height: 650px 
   text-align: center
   margin-top: 75px
   width: centerWidth
   margin-left:auto
   margin-right:auto
   padding: 0px
+  h1
+    margin-top:40px
   p
-    color: #777777
+    color: #3e3e3e
+
     line-height: 20pt
   #sections 
     height: 250px
     width: 100%
     margin-top: 80px
     .section
-      width: 33.3333%
-      float: left
+      width: 33%
+      display:inline-block
       p
         color: chiblue
         font-size: 38pt
@@ -64,13 +67,15 @@ a
 
         a
           color: chiblue
+          font-size: 60px
+          font-style:bold
         a:hover
           color: chiblue
       h2 
         font-size: 12px
         color: black
         text-transform: uppercase 
-        margin-bottom: 15px
+        margin-bottom: 19px
         padding: 0px
 
 #navbar
@@ -80,10 +85,15 @@ a
   z-index:100
   width:100%
   top:0px
+  a
+    color: black
+    text-decoration: none
+    &:hover 
+      color: chiblue
+    
   #outer
     width:100%
     background-color: #f8f8f8
-
     border-top: 1px chigrey solid 
     border-bottom: 1px chigrey solid 
     margin-top:37px
@@ -91,17 +101,18 @@ a
       width: centerWidth
       margin-right: auto
       margin-left: auto
-      height:85px  
+      height:74px
       #shdchi
         float:left
         img 
           width : 150px
-          margin-top: -30px
+          margin-top: -35px
+          cursor:pointer
         
       #navitems
         font-weight: bold
         float:right
-        line-height: 50px
+        line-height: 35px
         font-size: 20px
         li
           text-transform: lowercase
@@ -122,7 +133,6 @@ a
 #lower 
   width: centerWidth
   position:relative
-  margin-top: 50px
   margin-left: auto
   margin-right: auto
   height: 1000px
@@ -136,6 +146,8 @@ a
     #twitter 
       height: 360px
       width: 100%
+      overflow-y: hidden
+      margin-left:40px
     #photos 
       width: 100%
       height: 210px
@@ -149,21 +161,17 @@ a
         margin-bottom: 9px
         
   #right
-    position: absolute
-    top: 0px
-    right: 0px
     width: 500px
     float: right
     ul#articles
       list-style: none
       padding: 0px
       margin: 0px
+      margin-left:80px
       li.article 
-        position: relative
-        top: 0px
-        left: 0px
-        height: 450px
+
         width: 500px
+        margin-top: 20px
         div.timeStamp
           color: white 
           background-color: chiblue
@@ -180,9 +188,7 @@ a
           left: 0px
         div.articleContent
           width: 420px
-          position: absolute
-          right: 0px
-          top: 11px
+  
           border-bottom: 1px solid chigrey
           h2
             cursor: pointer
@@ -196,13 +202,15 @@ a
           p.blurb
             color: #777
             font-size: 15px
+        
           img
             cursor : pointer
     #more
-      position: absolute 
-      bottom:10px
-      right:10px
       cursor: pointer
+      margin-right:0px
+      margin-left: auto
+      margin-top :10px
+      float:right
       
 #sponsors 
   width: centerWidth
@@ -221,9 +229,9 @@ a
       padding:0px
       background-color: #ebeaea
       color: black
-      -moz-box-shadow: inset 0 0 5px #888;
-      -webkit-box-shadow: inset 0 0 5px#888;
-      box-shadow: inner 0 0 5px #888;
+      -moz-box-shadow: 0 1px 1px #999 inset, 0 1px 1px #fff;
+      -webkit-box-shadow: 0 1px 1px #999 inset, 0 1px 1px #fff;
+      box-shadow: 0 1px 1px #999 inset, 0 1px 1px #fff;
       text-align: center 
       line-height: 130px
       a
@@ -243,7 +251,7 @@ a
       font-size: 15px
       color: #777
       margin-bottom:60px
-      margin-top: 30px
+      margin-top: 15px
       span 
         font-weight: bold
         color: black
@@ -252,11 +260,15 @@ a
   height:200px
   width: 100%
   background-color: #3a91c6
-  border-top: 3px black solid 
+  border-top: 5px black solid 
   color: white
+  font-size : 10px
   text-align: center
+  h3 
+    font-size: 18px
+    margin-top: 50px
   ul
-    li  
+    li
       text-align: left
       display:inline-block
       width : 200px
@@ -267,16 +279,24 @@ a
       ul 
         margin:0px
         padding:0px
-        
+        li 
+          height:auto
+  img 
+    cursor: pointer
+  a 
+    color: white
 
 .stack > *:not(.active) 
   display: none
+
+#postTitle 
+  margin-bottom :10px
 
 #postContent 
   width : centerWidth
   margin-right  : auto
   margin-left   : auto
-  margin-bottom : 200px
+  margin-bottom : 100px
   #mainMedia
     width : 100%
     img 
@@ -289,29 +309,46 @@ a
     border-bottom : 1px solid chigrey
   #mainPost
     width : 100%
+    text-align:top
   #postLeft 
     width : 200px
-    height : 100%
+    min-height : 400px
     display: inline-block
-    float : left
+    vertical-align:top
+    img 
+      margin-bottom : 15px
   #postMeta 
     text-align: right
-    broder: 1px solid grey 
-    margin-bottom: 50px 
+    padding-bottom: 10px
+    margin-bottom :15px 
+    border-bottom : 1px solid chigrey
     h3 
       font-weight: 100
       margin:0px
+      margin-top: 15px
       font-size: 30px
-    p 
+    p
       font-size: 11px
       margin-top : 0px
+    
   #postRight
-    width: 600px
+    width: 585px
     display: inline-block
     font-weight: 100
     font-size: 15px
     padding-left:20px
-    text-align : top 
+    vertical-align : top 
+    margin-top: 4px
 
   
-
+#hacks
+  width: centerWidth
+  margin-left: auto
+  margin-right: auto
+  margin-bottom : 40px
+  h2
+    margin-bottom:0px
+  p
+    font-size: 15px
+    color: #777
+    margin-top : 0px

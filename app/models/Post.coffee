@@ -15,7 +15,8 @@ class Post extends Spine.Model
       p.save() 
   
   htmlTitle:->
-    @title.replace(' ',"_")
+    @title.replace /\s/g , "_"
 
+  
 
 module.exports = Post

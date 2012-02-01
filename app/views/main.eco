@@ -10,16 +10,16 @@
   </p>
   <div id='sections'>
     <div class='section'>
-      <h2>Register you interest</h2>
-      <p><a id='registerButton' href="#">Register</a></p>
+      <h2>Register your interest</h2>
+      <p><a id='registerButton' class='register' href="#">Register</a></p>
     </div>
     <div class='section'>
       <h2>Join the conversation</h2>
-      <p><a href='https://twitter.com/#!/search/realtime/chiscihd' target="_blank">#Chiscihd</a></p>
+      <p><a href='https://twitter.com/#!/search/realtime/shdchi' target="_blank">#SHDChi</a></p>
     </div>
     <div class='section'>
-      <h2>Upload your photos</h2>
-      <p><a href='http://www.flickr.com/groups/sciencehackday/' target="_blank">flicker.com</a></p>
+      <h2>Upload your Photos</h2>
+      <p><a href='http://www.flickr.com/groups/sciencehackday/' target="_blank">flicker</a></p>
     </div>
   </div>
 </div>
@@ -32,15 +32,19 @@
   <div id="live">
     <div id="left">
       <div id='twitter'>
+        <h2>tweets</h2>
+
       </div>
       <ul id='photos'>
-        <h2>Photos</h2>
+        <h2>photos</h2>
       </ul>
     </div>
     <div id="right">
        <ul id='articles'></ul>
-
-      <img href='#' src='images/morebutton.png' id='more'></img>
+      
+      <% if false: %>
+        <img href='#' src='images/morebutton.png' id='more'></img>
+      <%end%>
     </div>
   </div>
 </div>

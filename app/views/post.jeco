@@ -1,10 +1,16 @@
-<li class='article' data-title='<%=@title.replace(" ","_")  %>'>
+<li class='article' data-title='<%=@htmlTitle()%>'>
     <div class='articleContent'>
       <h2 class='articleTitle'><%=@title%></h2>
-      <p class='subheading'>Posted by <%=@author%> <%=@posted_at%></p>
-      <div class='media'><img width=420 src='<%=@mainMedia%>' /> </div> 
+      <p class='subheading'>Posted by <%=@author%> <%=@posted_at.toString("HH:mm d/M/yyyy")%></p>
+      <div class='media'>
+        <%if @mainMedia.split(".").length > 1: %>
+          <img width=420 src="<%=@mainMedia%>"></img>
+        <%else :%>
+          <iframe src="http://player.vimeo.com/video/<%=@mainMedia%>?title=0&amp;byline=0&amp;portrait=0" width="420" height="236" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <%end%>
+      </div> 
       <p class='blurb'>
-        <%=@blurb%>
+        <%-@blurb%>
       </p>
     </div>
 </li>

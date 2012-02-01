@@ -21,13 +21,14 @@ class PostFull extends Spine.Controller
     @post = Post.findByAttribute('title', @currentPostName)
     if @post
       @postContent.html require("views/postFull")(@post)
+      $(".colorbox_gallery").colorbox({rel:'post_#{@post.htmlTitle()}_gal'})
     else 
       @postContent.html ("<h1 style='text-align:center; height:330px' class='error'>Could not find the post you requested</h1>")
 
   activate:(args)=>
     super
     $(document).scrollTop(0)
-    @currentPostName = args.id.split("_").join(" ") #this is dumb but I am on a plane and cant remember how replace works
+    @currentPostName = args.id.replace /_/g , " "
     @showPost()
   
   back: =>

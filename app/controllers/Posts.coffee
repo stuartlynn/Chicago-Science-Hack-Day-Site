@@ -6,8 +6,6 @@ class Posts extends Spine.Controller
     'click .article img' : 'showPost'
     'click .articleTitle': 'showPost'
     
-
-
   constructor: ->
     super 
     Post.bind 'create', @appendPost
@@ -18,7 +16,5 @@ class Posts extends Spine.Controller
   showPost: (post)=>
     title = $(post.target).closest(".article").attr("data-title")
     @navigate("/posts/#{title}")
-
-
 
 module.exports = Posts

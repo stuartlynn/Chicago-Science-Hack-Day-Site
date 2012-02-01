@@ -22,9 +22,9 @@ class Sponsors extends Spine.Controller
       @[level].prepend require("views/sponsors")(Sponsor.Level(level))
       
     $('.sponsor_add').colorbox
-      href : 'https://docs.google.com/spreadsheet/embeddedform?formkey=dFhZUFVLdUtsc2xZN1ZPT3BNdG9EeGc6MQ' 
+      href : 'https://docs.google.com/a/zooniverse.org/spreadsheet/embeddedform?formkey=dGpBYWRObkNMU1ZmUWFlRTBRdlBCM1E6MQ' 
       iframe:true
-      innerWidth: 800
+      innerWidth: 630
       innerHeight: 800
 
 module.exports = Sponsors 

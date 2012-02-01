@@ -1,11 +1,5 @@
 {
   "sponsors": [
-    { 
-      "name" : "vizzuality",
-      "link" : "http://vizzuality.com/",
-      "logo" : "vizzuality.png",
-      "level" : "EINSTEIN"
-    },
 
     { 
       "name"  : "Adler Planetarium",
@@ -17,7 +11,8 @@
       "name"  : "Zooniverse",
       "link"  : "http://www.zooniverse.org/",
       "logo"  : "zooniverse.png",
-      "level" : "EINSTEIN"
+      "level" : "NEWTON"
     }
+    
   ]
 }

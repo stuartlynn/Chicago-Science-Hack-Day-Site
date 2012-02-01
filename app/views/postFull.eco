@@ -1,6 +1,9 @@
 <div id='mainMedia'>
-  <% console.log @%>
-  <img src="<%=@mainMedia%>"></img>
+  <%if @mainMedia.split(".").length > 1: %>
+    <img src="<%=@mainMedia%>"></img>
+  <%else :%>
+    <iframe src="http://player.vimeo.com/video/<%=@mainMedia%>?title=0&amp;byline=0&amp;portrait=0" width="820" height="461" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  <%end%>
 </div>
 <h2 id='postTitle'><%=@title%></h2>
 <div id='mainPost'>
@@ -10,7 +13,7 @@
       <p><%=@posted_at.toString("HH:mm d/M/yyyy")%> </p>
     </div>
     <%for media in @media:%>
-      <img src='<%=media%>' width=200 ></img>
+      <a rel= <%="post_#{@htmlTitle()}_gal"%> class='colorbox_gallery' href='<%=media%>'> <img src='<%=media%>' width=200 ></img></a>
     <%end%>
   </div>
   <div id='postRight'>
