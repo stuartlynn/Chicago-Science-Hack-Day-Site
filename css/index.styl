@@ -122,7 +122,8 @@ a
             margin-right:7px
   .navFade
     opacity:0.5
-    background-image: url('images/cshd_fade2.png')
+    background-color: transparent
+    background-image: url('images/cshd_fade3.png')
     background-position: 0px -23px
     background-repeat: repeat-x
     width:100%
@@ -132,17 +133,17 @@ a
 
 #lower 
   width: centerWidth
-  position:relative
   margin-left: auto
   margin-right: auto
-  height: 1000px
+  border-bottom: 1px solid chigrey
+  min-height: 900px
   #left
     width: 260px
-    position: absolute
-    left:0px
-    top: 0px
+    display: inline-block
+    vertical-align : top 
     margin: 0px
     padding: 0px
+    margin-left:-40px
     #twitter 
       height: 360px
       width: 100%
@@ -159,10 +160,12 @@ a
         display:inline-block
         margin-right:9px
         margin-bottom: 9px
-        
+    
   #right
     width: 500px
-    float: right
+    display: inline-block
+    vertical-align : top
+    margin-left:90px
     ul#articles
       list-style: none
       padding: 0px
@@ -346,6 +349,7 @@ a
   margin-left: auto
   margin-right: auto
   margin-bottom : 40px
+  border-top: 1px solid chigrey
   h2
     margin-bottom:0px
   p
