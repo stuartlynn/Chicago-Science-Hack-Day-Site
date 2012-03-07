@@ -26,7 +26,6 @@ class App extends Spine.Stack
    
     $(window).bind "hashchange", =>
       if window.location.hash == ""
-        console.log("going home")
         @navigate('/') 
     
     $(@registerButton).colorbox

@@ -27,21 +27,21 @@ class Main extends Spine.Controller
     @setUpFlickrFeed()
     @setUpTiwtterFeed()
 
-    $(document).scroll =>
-      if $(document).scrollTop() > 743
-        unless @navFixed
-          @navFixed = true 
-          $('#navbar').css("position","fixed") 
-          $('#navbar').css("top","0px") 
-          $('#lower').css("margin-top","142px")
-      else 
-        if @navFixed 
-          @navFixed=false 
-          $('#navbar').css("position","relative") 
-          $('#lower').css("margin-top","0px")
+    # $(document).scroll =>
+    #   if $(document).scrollTop() > 743
+    #     unless @navFixed
+    #       @navFixed = true 
+    #       $('#navbar').css("position","fixed") 
+    #       $('#navbar').css("top","0px") 
+    #       $('#lower').css("margin-top","142px")
+    #   else 
+    #     if @navFixed 
+    #       @navFixed=false 
+    #       $('#navbar').css("position","relative") 
+    #       $('#lower').css("margin-top","0px")
 
  
-      #remove twitter
+    #   #remove twitter
     $(".twtr-ft").find("img").remove()
   
   setUpTiwtterFeed: ->

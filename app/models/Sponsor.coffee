@@ -2,7 +2,6 @@ Spine = require('spine')
 
 class Sponsor extends Spine.Model
   @configure 'Sponsor', 'name', 'link', 'logo', 'level'
-  @extend Spine.Model.Ajax
   
   @Level :(level)=>
     (sponsor  for sponsor in @all() when sponsor.level==level)
