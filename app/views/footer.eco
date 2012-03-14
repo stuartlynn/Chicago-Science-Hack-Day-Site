@@ -3,7 +3,7 @@
     <li>
       <h3>Get updates</h3>
      
-      <p class='register' id='more'>Register</p>
+      <p class='register' id='more' style='line-height:28px;font-weight:bold'> <a style='color:white' href="http://www.eventbrite.com/event/3140181367?ref=ebtn" target="_blank">Register</a></p>
 
     </li>
     <li> 

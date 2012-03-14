@@ -44,7 +44,7 @@ a:hover {
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  width: 844px;
+  width: 845px;
   padding-top: 100px;
 }
 #poster #logo {
@@ -241,7 +241,8 @@ a:hover {
 #lower #right ul#articles li.article div.articleContent img {
   cursor: pointer;
 }
-#more {
+#more,
+#hacksLink {
   cursor: pointer;
   margin-right: 0px;
   margin-left: auto;
@@ -254,10 +255,11 @@ a:hover {
   border: 1px solid #b53318;
   font-size: 15px;
   text-align: center;
-  line-height: 32px;
+  line-height: 31px;
   font-weight: bold;
   text-transform: uppercase;
   float: left;
+  margin-right: 10px;
 }
 #sponsors {
   width: 820px;

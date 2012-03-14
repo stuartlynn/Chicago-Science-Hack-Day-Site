@@ -28,11 +28,11 @@ class App extends Spine.Stack
       if window.location.hash == ""
         @navigate('/') 
     
-    $(@registerButton).colorbox
-      href : 'https://docs.google.com/spreadsheet/embeddedform?formkey=dFhZUFVLdUtsc2xZN1ZPT3BNdG9EeGc6MQ' 
-      iframe:true
-      innerWidth: 620
-      innerHeight: 600  
+    # $(@registerButton).colorbox
+    #   href : 'https://docs.google.com/spreadsheet/embeddedform?formkey=dFhZUFVLdUtsc2xZN1ZPT3BNdG9EeGc6MQ' 
+    #   iframe:true
+    #   innerWidth: 620
+    #   innerHeight: 600  
 
     Post.fetch()
     Sponsor.fetch()

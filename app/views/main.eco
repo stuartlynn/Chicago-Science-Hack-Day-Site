@@ -19,7 +19,10 @@
           <h2>You decide how the event goes.</h2>
           <p>When you arrive, we’ll have a few speakers and an hour of schmoozing and proposing hack ideas. You can pitch ideas, or join up with projects you’re interested in. After that, teams are free to get to work on their hacks. There will be plenty of food and drinks throughout the 24 hours. On Sunday afternoon, everyone will reconvene to check out the hacks and award prizes to the favorites.</p>
 
-          <p class='register' id='more' style='line-height:28px;font-weight:bold'>Register</p>
+          <p class='register' id='more' style='line-height:31px;margin-right:10px;font-weight:bold'> <a style='color:white' href="http://www.eventbrite.com/event/3140181367?ref=ebtn" target="_blank">Register</a></p>
+
+          <p class='register' id='hacksLink' style='line-height:31px;font-weight:bold'> <a style='color:white' href="http://sciencehackday.pbworks.com/chicagoideas" target="_blank">Hack Ideas</a></p>
+
 
         </div>
       </div>
