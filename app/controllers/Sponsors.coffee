@@ -9,12 +9,10 @@ class Sponsors extends Spine.Controller
   levels : 
     'EINSTEIN' :  5000
     'NEWTON'   :  2000
-    'KEPLER'   :  500
 
   blurbs:
     'EINSTEIN' :  "Sponsors at this level get a 5-minute presentation at the start of the event, can bring promotional materials to the event, and will have their logo displayed here."
     'NEWTON'   :  "Sponsors at this level can bring promotional materials to the event and will have their logo displayed here."
-    'KEPLER'   :  "Sponsors at this level will have their logo displayed here."
 
   constructor: ->
     super 

@@ -2,7 +2,7 @@
 <% for level, amount of @levels when typeof(amount)!='function':%>
  <div id='<%=level%>' class='sponsor-section'>
   <p>
-    <span style='font-weight:bold'><%=level%> LEVEL - $<%=amount%></span>  <%-@blurbs[level]%>
+  
   </p>
 </div>
 <%end%>

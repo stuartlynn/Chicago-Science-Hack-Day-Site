@@ -12,6 +12,20 @@
       "link"  : "http://www.zooniverse.org/",
       "logo"  : "zooniverse.png",
       "level" : "NEWTON"
+    },
+
+    { 
+      "name"  : "Motorola",
+      "link"  : "http://responsibility.motorola.com/index.php/community/motofoundation/",
+      "logo"  : "motorola_mob.png",
+      "level" : "EINSTEIN"
+    },
+
+    {
+      "name" : "GitHub",
+      "link" : "https://github.com/",
+      "logo"  : "github.png",
+      "level" : "NEWTON"
     }
     
   ]
