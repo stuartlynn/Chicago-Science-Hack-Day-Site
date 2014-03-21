@@ -2,13 +2,18 @@ head,body,h1,h2,h3,p,a{
 	font-family: Helvetica, arial, sans-serif
 }
 
+embed {
+	height: auto !important;
+	min-height: 500px;
+}
+
 h1,h2,h3{
 	color: #ea4624;
 	font-weight: 400;
 }
 
 h2{
-	padding-left: 0px !important 
+	padding: 15px 0 !important;
 }
 .title-area .name{
 	color: black;
@@ -75,6 +80,11 @@ footer h1, footer h2, footer h3, footer p{
 .top-bar .title-area .name a {
 	color :#ED4514;
 }
+
+.button {
+	border-radius: 3px;
+}
+
 .button.red{
 	background-color: #ED4514 !important ;
 	color: white;
@@ -86,4 +96,8 @@ footer h1, footer h2, footer h3, footer p{
 
 .sponsors{
 	margin-bottom: 20px;
+}
+
+.padded-right {
+	padding: 0 0 15px 30px;
 }
