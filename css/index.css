@@ -1,0 +1,89 @@
+head,body,h1,h2,h3,p,a{
+	font-family: Helvetica, arial, sans-serif
+}
+
+h1,h2,h3{
+	color: #ea4624;
+	font-weight: 400;
+}
+
+h2{
+	padding-left: 0px !important 
+}
+.title-area .name{
+	color: black;
+}
+.header{
+	background-color: #ea4624 ;
+	color: white;
+	width: 100%;
+	padding:50px 0px 50px 0px;
+}
+
+footer{
+	background-color: #ea4624;
+	color:white;
+	padding-top: 20px;
+}
+
+footer a{
+	color:white;
+}
+
+section{
+	padding:20px 0px 20px 0px;
+}
+
+section.top-bar-section{
+	padding:0px;
+}
+footer h1, footer h2, footer h3, footer p{
+	color:white;
+}
+.header h1, .header h2, .header h3{
+	color:white;
+}
+.content{
+	background-color: #F8F8F8;
+}
+.content .row{
+	border-bottom: solid 1px #BFC3C9;
+
+}
+
+.content .row.no_border{
+	border-bottom: none;	
+}
+
+.top-bar{
+	background-color: white;
+}
+
+.ul.right{
+	height: 40px ;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+	background:none;
+	color:#ED4514;
+}
+
+.top-bar-section ul {
+	background-color: white;
+}
+
+.top-bar .title-area .name a {
+	color :#ED4514;
+}
+.button.red{
+	background-color: #ED4514 !important ;
+	color: white;
+}
+.button.white{
+	background-color: white;
+	color: #ea4624;
+}
+
+.sponsors{
+	margin-bottom: 20px;
+}
